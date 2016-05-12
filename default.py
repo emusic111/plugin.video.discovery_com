@@ -25,7 +25,7 @@ bitrate = addon.getSetting("bitrate")
 bitrate = [600, 800, 1500, 3500][int(bitrate)]
 itemsPerPage = addon.getSetting("itemsPerPage")
 itemsPerPage = ["25", "50", "75", "100"][int(itemsPerPage)]
-urlMain = "http://dsc.discovery.com"
+urlMain = "http://discovery.com"
 urlMainNews = "http://news.discovery.com"
 iconPathNews = os.path.join(thumbsDir, "discovery_news.png")
 
@@ -33,15 +33,15 @@ iconPathNews = os.path.join(thumbsDir, "discovery_news.png")
 def index():
     addDir("Discovery News", "", 'listNewsMain', iconPathNews)
     addDir("Discovery Channel", urlMain+"/videos", 'listShows', os.path.join(thumbsDir, "discovery_channel.png"), "", "", "Discovery")
-    addDir("Animal Planet", "http://animal.discovery.com/videos", 'listShows', os.path.join(thumbsDir, "animal_planet.png"), "", "", "APL")
+    addDir("Animal Planet", "http://animalplanet.com/videos/", 'listShows', os.path.join(thumbsDir, "animal_planet.png"), "", "", "APL")
     addDir("Animal Planet Live", "", 'listAPL', os.path.join(thumbsDir, "animal_planet_live.png"))
     addDir("TLC", "http://www.tlc.com/videos", 'listShows', os.path.join(thumbsDir, "tlc.png"), "", "", "TLC")
-    addDir("Science Channel", "http://science.discovery.com/videos", 'listShows', os.path.join(thumbsDir, "science_channel.png"), "", "", "Science%2520Channel")
-    addDir("Destination America", "http://america.discovery.com/videos", 'listShows', os.path.join(thumbsDir, "destination_america.png"), "", "", "DAM")
-    addDir("Investigation Discovery", "http://investigation.discovery.com/videos", 'listShows', os.path.join(thumbsDir, "investigation_discovery.png"), "", "", "Investigation%2520Discovery")
-    addDir("Military Channel", "http://military.discovery.com/videos", 'listShows', os.path.join(thumbsDir, "military_channel.png"), "", "", "Military%2520Channel")
-    addDir("Velocity", "http://velocity.discovery.com/videos", 'listShows', os.path.join(thumbsDir, "velocity.png"), "", "", "Velocity")
-    addDir("Discovery fit&health", "http://health.discovery.com/tv-shows", 'listShows', os.path.join(thumbsDir, "discovery_fit_health.png"), "", "", "Health")
+    addDir("Science Channel", "http://sciencechannel.com/videos/", 'listShows', os.path.join(thumbsDir, "science_channel.png"), "", "", "Science%2520Channel")
+    addDir("Destination America", "http://destinationamerica.com/videos/", 'listShows', os.path.join(thumbsDir, "destination_america.png"), "", "", "DAM")
+    addDir("Investigation Discovery", "http://investigationdiscovery.com/videos/", 'listShows', os.path.join(thumbsDir, "investigation_discovery.png"), "", "", "Investigation%2520Discovery")
+    addDir("Military Channel", "http://ahctv.com/videos/", 'listShows', os.path.join(thumbsDir, "military_channel.png"), "", "", "Military%2520Channel")
+    addDir("Velocity", "http://velocity.com/videos/", 'listShows', os.path.join(thumbsDir, "velocity.png"), "", "", "Velocity")
+    addDir("Discovery fit&health", "http://discoverylife.com/tv-shows/", 'listShows', os.path.join(thumbsDir, "discovery_fit_health.png"), "", "", "Health")
     addPluginDir("HowStuffWorks", "plugin://plugin.video.howstuffworks_com", os.path.join(thumbsDir, "how_stuff_works.png"))
     if forceViewMode:
         xbmc.executebuiltin('Container.SetViewMode('+viewModeNewsShows+')')
