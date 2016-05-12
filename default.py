@@ -25,8 +25,8 @@ bitrate = addon.getSetting("bitrate")
 bitrate = [600, 800, 1500, 3500][int(bitrate)]
 itemsPerPage = addon.getSetting("itemsPerPage")
 itemsPerPage = ["25", "50", "75", "100"][int(itemsPerPage)]
-urlMain = "http://discovery.com/tv-shows/"
-urlMainNews = "http://news.discovery.com"
+urlMain = "http://discovery.com"
+urlMainNews = "http://discovery.com"
 iconPathNews = os.path.join(thumbsDir, "discovery_news.png")
 
 
